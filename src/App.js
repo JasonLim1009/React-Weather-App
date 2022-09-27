@@ -39,7 +39,7 @@ function App() {
           </div>
           <div className="temp">
             {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
-            //<img src={iconUrlFromCodel()} alt="" />
+            
           </div>
           <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p> : null}
