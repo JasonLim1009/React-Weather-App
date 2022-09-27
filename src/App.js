@@ -8,8 +8,8 @@ function App() {
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=79b888d2b147d0f96b2ca714cad2d847&units=metric`;
 
-//   const iconUrlFromCodel = (code) =>
-//     `http://openweathermap.org/img/wn/10d@2x.png`;
+  const iconUrlFromCodel = (code) =>
+    `http://openweathermap.org/img/wn/10d@2x.png`;
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
@@ -39,7 +39,7 @@ function App() {
           </div>
           <div className="temp">
             {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
-            <img src={iconUrlFromCodel()} alt="" />
+//             <img src={iconUrlFromCodel()} alt="" />
           </div>
           <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p> : null}
